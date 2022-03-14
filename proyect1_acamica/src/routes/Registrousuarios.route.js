@@ -195,7 +195,7 @@ router.delete('/:id', isAdmin, usser.eliminarUsuario);
  *                  description: contrasenia del usuario
  *          example:
  *             email: example@gmail.com
- *             contrasenia: contrasenia2example
+ *             contrasenia: contrasenia2ejemplo
  */
 
 module.exports = router;
