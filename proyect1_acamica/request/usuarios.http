@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/usuarios/registro
+Content-Type: application/json
+
+{
+    "usuario": "usuarioNO2Admin",
+    "nombre": "admin",
+    "telefono": "3112344456",
+    "contrasenia": "12345",
+    "repetir_contrasenia": "12345",
+    "email": "admin2@gmail.com"
+}
+
+###
+POST http://localhost:3000/usuarios/login
+Content-Type: application/json
+
+{
+    "email": "admin2@gmail.com",
+    "contrasenia": "12345"
+}
+
+### 
+GET http://localhost:3000/usuarios
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiBpbmljaWFsIiwidXN1YXJpbyI6InVzdWFyaW9BZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjM4NDQ2M30.T4WxoW6PaYX3jNm53B8sNb53-Epl8UG7MMBEbC_tt1I
+
+
+// cambiar estado de un usuario
+###
+GET http://localhost:3000/usuarios/estadoUsuario/614c35a97899b2e8df3b86c6
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiBpbmljaWFsIiwidXN1YXJpbyI6InVzdWFyaW9BZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjM4NDQ2M30.T4WxoW6PaYX3jNm53B8sNb53-Epl8UG7MMBEbC_tt1I
+
+### 
+DELETE http://localhost:3000/usuarios/614814a22deb99f339d2400b
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzEzMDcxNjR9.blVG7QU016uYQ-_r6bFgnAJI91AC-Ti5kvtrxBbXOq0

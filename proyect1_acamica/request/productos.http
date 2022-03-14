@@ -1,0 +1,28 @@
+###
+POST http://localhost:3000/productos
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzEzMTc4MDh9.1WsZUpojarUUR9yDU3ww7RuIgcetHEZYflkfzPGCLyQ
+
+{
+    "nombreProducto": "coca cola",
+    "precio": 2000,
+    "descripcion": "bebida refrescante"
+}
+
+###
+GET http://localhost:3000/productos
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+### 
+PUT http://localhost:3000/productos/613bfb781e2505f1b97d25df
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzEzMTc4MDh9.1WsZUpojarUUR9yDU3ww7RuIgcetHEZYflkfzPGCLyQ
+
+{
+    "nombreProducto": "coca promo 2",
+    "precio": 1000
+}
+
+###
+DELETE http://localhost:3000/productos/613bfb781e2505f1b97d25df
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzEzMTc4MDh9.1WsZUpojarUUR9yDU3ww7RuIgcetHEZYflkfzPGCLyQ

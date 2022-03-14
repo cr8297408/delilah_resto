@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/mediospago
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+###
+POST http://localhost:3000/mediospago
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+{
+    "nombreMedioPago": "transferencia bancaria",
+    "descripcion": "pago mediante transacción bancaria; antes del envio"
+}
+
+###
+PUT http://localhost:3000/mediospago/613d9d7250137de9e3d076f9
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+{
+    "nombreMedioPago": "efectivo",
+    "descripcion": "pago contra entrega en efecivo"
+}
+
+###
+DELETE http://localhost:3000/mediospago/613da45c7a58b5082f96de37
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A

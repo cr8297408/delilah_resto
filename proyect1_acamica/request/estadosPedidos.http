@@ -1,0 +1,26 @@
+###
+POST http://localhost:3000/estadosPedidos
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE4NTIwOTZ9.Ia2zh4I0uX6qWYffrJlkJlgCtYtodFVk_baYr3MZ_FA
+
+{
+    "estado": "pendiente 2",
+    "descripcion": "todo pedido queda en este estado hasta confirmarse"
+}
+
+###
+GET http://localhost:3000/estadosPedidos
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE4NTIwOTZ9.Ia2zh4I0uX6qWYffrJlkJlgCtYtodFVk_baYr3MZ_FA
+
+###
+PUT http://localhost:3000/estadosPedidos/614417462a03c6ae6c43fa0b
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE4NTIwOTZ9.Ia2zh4I0uX6qWYffrJlkJlgCtYtodFVk_baYr3MZ_FA
+
+{
+    "estado": "pendiente actualizado"
+}
+
+###
+DELETE http://localhost:3000/estadosPedidos/614ee67ccbfeb05ad03626ba
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE4NTIwOTZ9.Ia2zh4I0uX6qWYffrJlkJlgCtYtodFVk_baYr3MZ_FA

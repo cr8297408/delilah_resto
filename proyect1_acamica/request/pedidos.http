@@ -1,0 +1,40 @@
+###
+POST http://localhost:3000/pedidos
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiBpbmljaWFsIiwidXN1YXJpbyI6InVzdWFyaW9BZG1pbiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYzMjM4NDQ2M30.T4WxoW6PaYX3jNm53B8sNb53-Epl8UG7MMBEbC_tt1I
+
+{
+    "productos": [
+        {
+            "nombreProducto": "coca cola",
+            "cantidad": 3
+        },
+        {
+            "nombreProducto": "jugo hit"
+        }
+    ],
+    "email": "emailusuario1@gmail.com",
+    "direccion": "direccion prueba",
+    "medioPago": "efectivo"
+}
+
+###
+GET http://localhost:3000/pedidos
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+###
+GET http://localhost:3000/pedidos/emailprueba2@gmail.com
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+###
+PUT http://localhost:3000/pedidos/6134078f704df2838f144f8a
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
+
+{
+    "estado" : "pendiente"
+}
+
+###
+DELETE http://localhost:3000/pedidos/6144205677af45ad2ba89c8c
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJhZG1pbiIsInVzdWFyaW8iOiJ1c3VhcmlvQWRtaW4iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2MzE0Mjc3NTB9.bUUWzCqkurcS_DhwTAAp6_2rqBAnJW-gP_HAZ_Xu23A
