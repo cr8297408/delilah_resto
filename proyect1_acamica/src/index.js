@@ -15,7 +15,7 @@ const pedidosRoute = require('./routes/pedidos.route');
 const mediosPago = require('./routes/mediosPago.route');
 const estadosPedidos = require('./routes/estadosPedidos.route');
 const healthCheck = require('./routes/health-check.route');
-const authRoute = require('./routes/auth/google');
+const authRoute = require('./routes/auth/google.route');
 
 const expressJWT = require('./JWT');
 const configs = require('./config');
