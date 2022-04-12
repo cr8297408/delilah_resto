@@ -1,4 +1,5 @@
 const configs = require('../config');
+const URL_SWAGGER = configs.swagger.URL_SWAGGER;
 const PORT = configs.express.EXPRESS_PORT;
 
 const swaggerOptions = {
@@ -11,7 +12,7 @@ const swaggerOptions = {
         },
         servers: [
             {
-		    url: 'https://www.delilahresto.ml',
+		    url: URL_SWAGGER,
                 description: "server 1",
             },
         ],

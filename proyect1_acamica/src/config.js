@@ -15,6 +15,14 @@ const configs = {
     express: {
         EXPRESS_PORT: process.env.PORT,
     },
+    swagger: {
+        URL_SWAGGER: process.env.URL_SWAGGER,
+    },
+    google: {
+        GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
+        GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
+        GOOGLE_CALLBACK: process.env.GOOGLE_CALLBACK,
+    }
 };
 
 module.exports = configs;

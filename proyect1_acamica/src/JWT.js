@@ -9,7 +9,14 @@ const expressJWT = expressjwt({
     secret: JWT_SECRET,
     algorithms: [JWT_ALGORITHMS],
 }).unless({
-    path: [ '/usuarios/login', '/usuarios/registro', '/', '/health-check' ],
+    path: [ 
+        '/usuarios/login', 
+        '/usuarios/registro', 
+        '/', 
+        '/health-check', 
+        '/google/auth', 
+        '/google/callback'
+    ],
 });
 
 module.exports = expressJWT;

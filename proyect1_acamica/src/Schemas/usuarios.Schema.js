@@ -18,8 +18,7 @@ const usuarioSchema = Joi.object({
 
     telefono: Joi.string()
         .min(10)
-        .max(12)
-        .required(),
+        .max(12),
 
     direccion: Joi.string(),
 
