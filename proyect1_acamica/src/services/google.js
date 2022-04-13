@@ -18,29 +18,8 @@ passport.use(strategy_name, new GoogleStrategy({
     //passReqToCallback: true,
   },
   async (accessToken, refreshToken, profile, done) => {
-    console.log(profile);
-    // buscar usuario
-    let user = await Usuario.findOne({email: profile.emails[0].value});
-    if(user){
-        done(null, user);
-    } else {
-        try {
-            const newUser = {
-                nombre: profile.name.givenName,
-                email: profile.emails[0].value,
-                isAdmin: false,
-                usuario: profile.username,
-                contrasenia: bcrypt.hashSync(profile.id, 10)
-            }
-            let usuarioNuevo = new Usuario(newUser);
-            const usuarioCreado = await usuarioNuevo.save();
-            done(null, user);
-        } catch (error) {
-            res.json('algo salió mal.... ');
-        }
-    }
-
-
+    
+    return done(null, user);
   }
 ));
 

@@ -26,17 +26,7 @@ router.get('/callback',
     }),
     function(req, res) {
         console.log(`Peticion Get ${strategy_name}/callback`);
-    
-        // obtener los datos de google
-        const {nombre, email, isAdmin, usuario} = req.user;
-
-        const token = jsonwebtoken.sign({
-            nombre,
-            usuario,
-            isAdmin,
-        }, JWT_SECRET);
-        console.log(token);
-        console.log({nombre, email, isAdmin, usuario});
+        const token = 'eyuyh353gbsbahs7sasdsu7a6dbxnx'
         res.redirect('http://localhost:3000/api-docs?token='+token);
 });
 
